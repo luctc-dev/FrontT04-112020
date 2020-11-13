@@ -1,0 +1,147 @@
+body {
+  min-height: 3000px;
+}
+.p1 {
+  width: 40%;
+  background-color: blue;
+}
+.p2 {
+  width: 30%;
+  background-color: yellow;
+}
+.p3 {
+  /* width: 30%;
+  background-color: aqua; */
+  background-color: aqua;
+  text-align: center;
+}
+
+.span1 {
+  width: 2000px;
+  text-align: center;
+  background-color: peru;
+}
+
+.a1 {
+  background-color: rosybrown;
+}
+
+.div1 {
+  display: inline-block;
+  width: 300px;
+  background-color: seagreen;
+}
+
+.block-1 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: steelblue;
+}
+
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* demo inline-block */
+.ib-1 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: steelblue;
+}
+
+/* .ib-center {
+  -> Sai 
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.ib-center {
+  width: 400px;
+  text-align: center;
+  background-color: wheat;
+}
+.ib-right {
+  width: 300px;
+  text-align: right;
+  background-color: tomato;
+}
+
+
+/* .div-boc-chu-a {
+  background-color: violet;
+} */
+
+.btn-1 {
+  background-color: #656565;
+  border: 0;
+  padding: 5px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.group-btn {
+  text-align: center;
+  /* background-color: turquoise; */
+}
+.group-btn .title {
+  color: #656565;
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 55px;
+}
+.group-btn .sub-title {
+  /* background-color: violet; */
+  font-size: 23px;
+  color: #656565;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+
+.wrapper-column {
+  background-color: thistle;
+}
+
+.column-4 {
+  width: 50%;
+  background-color: turquoise;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0;
+}
+
+.column-4 .item {
+  width: 25%; /* 100% / 4 cột  */
+  background-color: violet;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 16px;
+  border: 5px solid red;
+  box-sizing: border-box;
+}
+
+/* 
+
+  box-sizing: border-box; 
+    -> Kích thước tổng lấy border làm chuẩn
+    -> width: 25% -> đã bao gồm border rồi
+
+  box-sizing: content-box;
+    -> Kích thước tổng lấy content làm chuẩn
+    -> width: 25% -> chỉ bao gồm content mà thôi 
+    -> Nếu có thêm border -> width = 25% + border-left + border-right
+*/
