@@ -1,0 +1,37 @@
+h1#id-01 .class-ben-trong{
+
+}
+h1#id-01 > .class-ben-trong{
+
+}
+h1#id-01.class-ben-trong{
+
+}
+
+/* Selector cua CSS  */
+
+.h1-style-02 {
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Chọn những tr có số thứ tự là chẵn */
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+span:nth-child(even) {
+  
+}
