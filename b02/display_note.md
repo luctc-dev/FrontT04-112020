@@ -31,6 +31,7 @@
 -> Làm sao để phân biệt đâu là block element?? Đâu là inine element??
 -> Mình toàn quyền với CSS (Có thể ép buộc thẻ block về inline và ngược lại bằng thuộc tính display)
 
+# Display flex-box (dislay: flex;)
 
 ==================================================
 
