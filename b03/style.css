@@ -1,0 +1,197 @@
+
+.container {
+  width: 1170px;
+  /* background-color: aqua; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0;
+}
+
+/* .box, .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 { */
+[class*="box"] { 
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: yellow;
+  margin-top: 100px;
+}
+
+.line {
+  height: 5px;
+  width: 0%;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  transition: width 3s;
+}
+
+.box:hover .line {
+  width: 100%;
+  /* transition: width 3s; */
+}
+/* 
+- Trạng thái thay đổi là width
+    Từ 0 -> 100%
+    Muốn hiệu ứng mượn mà 
+       0 -> 0.01 -> 1 -> 2 -? 3 -> 100%
+        -> transition trong css
+
+- Khi nào xảy ra hiệu ứng?? 
+  Rê chuột vào (Xử lý bằng CSS) 
+
+  Dùng Selector là :hover
+
+*/
+
+
+
+.box-2::before {
+  content: '';
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  transition: right 3s;
+  left: 0;
+  width: auto;
+  right: 100%;
+  bottom: 0;
+}
+.box-2:hover::before {
+  right: 0;
+}
+
+
+
+.box-3::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  height: auto;
+  width: 5px;
+  background-color: red;
+  /* transition: top 0.3s, width 0.3s, bottom 0.3s; */
+  transition: all 0.3s;
+}
+.box-3:hover::after {
+  top: 0;
+  width: 50px;
+  bottom: 50%;
+  background-color: blue;
+}
+
+
+.box-4::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  top: 50%;
+  width: 5px;
+  background-color: red;
+  transition: all 300ms;
+  /* transition: all 0.3s; */
+  /* transition: top 0.3s, bottom 0.3s; */
+}
+.box-4:hover::after {
+  top: 0;
+  bottom: 0;
+}
+
+
+.box-5::after,
+.box-5::before {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  top: 50%;
+  width: 5px;
+  background-color: red;
+  transition: all 300ms;
+  /* transition: all 0.3s; */
+  /* transition: top 0.3s, bottom 0.3s; */
+}
+.box-5::after {
+  right: 0;
+}
+.box-5::before {
+  left: 0;
+}
+.box-5:hover::after,
+.box-5:hover::before {
+  top: 0;
+  bottom: 0;
+}
+
+
+.box-6::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+  background-color: transparent;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.box-6:hover::before {
+  left: 0;
+  right: 0;
+}
+
+.box-6::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  border-left: 5px solid blue;
+  border-right: 5px solid blue;
+  background-color: transparent;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.box-6:hover::after {
+  top: 0;
+  bottom: 0;
+}
+
+
+.btn {
+  border: 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 35px;
+  display: inline-block;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* background-color: rgb(255 255 255 / 0.2); */
+  background-color: rgb(255, 255, 255, 0.2);
+  transform: translate(-100%, 0) rotate(-45deg);
+  transition: all 0.5s;
+  transform-origin: 50% 50%;
+  pointer-events: none;
+}
+
+.btn:hover::before {
+  transform: translate(100%, 0) rotate(-45deg);
+}
