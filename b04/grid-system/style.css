@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .a .b {
+
+}
+
+.a > .b {
+
+} */
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  background-color: pink;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.my-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+.bg-blue {
+  background-color: blue;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-aqua {
+  background-color: aqua;
+}
+.bg-pink {
+  background-color: pink;
+}
+.color-white {
+  color: #fff;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-between {
+  justify-content: space-between;
+}
+.jc-around {
+  justify-content: space-around;
+}
+.jc-evenly {
+  justify-content: space-evenly;
+}
+
+.ais-start {
+  align-items: flex-start;
+}
+.ais-end {
+  align-items: flex-end;
+}
+.ais-center {
+  align-items: center;
+}
+.ais-stretch {
+  align-items: stretch;
+}
+
+
+/* Grid system 
+  12 cột nhỏ = 100%
+  Mỗi cột nhỏ = 100 / 12% = 8.3333
+
+*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-1_7, .col-2_4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+} */
+
+/* Attribute selector */
+.row > [class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+
+.row.no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.no-gutters > [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+
+.row.gutters-20 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.row.gutters-20 > [class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.row.gutters-10 {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.row.gutters-10 > [class*="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+
+.col-1 {
+  width: 8.333%;
+}
+.col-1_7 {
+  width: 14.285%;
+}
+.col-2 {
+  width: 16.666%;
+}
+.col-2_4 {
+  width: 20%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.333%;
+}
+.col-5 {
+  width: 41.6665%;
+}
+.col-6 {
+  width: 50%;
+}
+
+.list-blog {
+  background-color: red;
+}
+.blog-item {
+  background-color: #ccc;
+}
+
+.columns-3 .item {
+  width: calc(33.3333% - 20px);
+  margin-bottom: 30px;
+  background-color: red;
+}
+.columns-4 .item {
+  width: calc(25% - 15px);
+  margin-bottom: 20px;
+  background-color: aqua;
+}
+.columns-4-30 .item {
+  width: calc(25% - 22.5px);
+  margin-bottom: 30px;
+  background-color: blueviolet;
+}
+
+
+.list-blogs .blog-item {
+  width: calc(25% - 22.5px);
+  margin-bottom: 30px;
+  background-color: blueviolet;
+}
+
+.list-product .product-item {
+  width: calc(25% - 15px);
+  margin-bottom: 20px;
+  background-color: aqua;
+}
+
+/* Cập nhật thêm chức năng mà không ảnh hưởng tới chức năng cũ 
+  -> Thêm nhiều class thôi
+*/

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  background-color: pink;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+
+.my-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Grid system 
+  12 cột nhỏ = 100%
+  Mỗi cột nhỏ = 100 / 12% = 8.3333
+
+*/
+
+.tcl-row {
+  font-size: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* .tcl-col-1, .tcl-col-2, .tcl-col-3, .tcl-col-4, .tcl-col-5, .tcl-col-6,
+.tcl-col-1_7, .tcl-col-2_4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+} */
+
+/* Attribute selector */
+.tcl-row [class*="tcl-col-"] {
+  font-size: 16px;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+
+.tcl-row.no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+}
+.tcl-row.no-gutters [class*="tcl-col-"] {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+
+.tcl-row.gutters-20 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.tcl-row.gutters-20 [class*="tcl-col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.tcl-row.gutters-10 {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.tcl-row.gutters-10 [class*="tcl-col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+
+.tcl-col-1 {
+  width: 8.333%;
+}
+.tcl-col-1_7 {
+  width: 14.285%;
+}
+.tcl-col-2 {
+  width: 16.666%;
+}
+.tcl-col-2_4 {
+  width: 20%;
+}
+.tcl-col-3 {
+  width: 25%;
+}
+.tcl-col-4 {
+  width: 33.333%;
+}
+.tcl-col-5 {
+  width: 41.6665%;
+}
+.tcl-col-6 {
+  width: 50%;
+}
+
+.list-blog {
+  background-color: red;
+}
+.blog-item {
+  background-color: #ccc;
+}
+
+.columns-3 .item {
+  width: calc(33.3333% - 20px);
+  margin-bottom: 30px;
+  background-color: red;
+}
+.columns-4 .item {
+  width: calc(25% - 15px);
+  margin-bottom: 20px;
+  background-color: aqua;
+}
+.columns-4-30 .item {
+  width: calc(25% - 22.5px);
+  margin-bottom: 30px;
+  background-color: blueviolet;
+}
+
+
+.list-blogs .blog-item {
+  width: calc(25% - 22.5px);
+  margin-bottom: 30px;
+  background-color: blueviolet;
+}
+
+.list-product .product-item {
+  width: calc(25% - 15px);
+  margin-bottom: 20px;
+  background-color: aqua;
+}
+
+/* Cập nhật thêm chức năng mà không ảnh hưởng tới chức năng cũ 
+  -> Thêm nhiều class thôi
+*/

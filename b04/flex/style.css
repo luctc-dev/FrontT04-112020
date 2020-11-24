@@ -1,0 +1,100 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: pink;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.columns-4 {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap */
+  flex-wrap: wrap;
+}
+.columns-4 .item {
+  width: 25%;
+  margin-bottom: 20px;
+}
+.columns-4 .item::first-letter {
+  font-size: 30px;
+  color: yellow;
+}
+.columns-4 .item:nth-child(even) {
+  color: #fff;
+  background-color: blue;
+}
+.columns-4 .item:nth-child(odd) {
+  /* color: #fff; */
+  background-color: red;
+}
+/* even - odd */
+
+
+/* Atomic CSS */
+.my-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+.bg-blue {
+  background-color: blue;
+}
+.bg-red {
+  background-color: red;
+}
+.color-white {
+  color: #fff;
+}
+.width-25 {
+  width: 25%;
+}
+.width-33 {
+  width: 33.333%;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-between {
+  justify-content: space-between;
+}
+.jc-around {
+  justify-content: space-around;
+}
+.jc-evenly {
+  justify-content: space-evenly;
+}
+
+.ais-start {
+  align-items: flex-start;
+}
+.ais-end {
+  align-items: flex-end;
+}
+.ais-center {
+  align-items: center;
+}
+.ais-stretch {
+  align-items: stretch;
+}
