@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="libs/bootstrap4/css/bootstrap.css">
+  <style>
+    .dropdown.custom-dropdown .dropdown-menu {
+      display: block;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.3s;
+      transform: translateX(20px) translateY(20px);
+    }
+    .dropdown.custom-dropdown.show .dropdown-menu {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0) translateY(0);
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="dropdown custom-dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <form>
+            <div class="row">
+              <div class="col-7">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </div>
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="product">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptates ea alias error illo? Aut praesentium inventore dolore adipisci magni? Esse, officia?
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="product">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptates ea alias error illo? Aut praesentium inventore dolore adipisci magni? Esse, officia?
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="product">
+            Lorem ipsum dolor sit amet ct consectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptatt consectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptatonsectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptates ea alias error illo? Aut praesentium inventore dolore adipisci magni? Esse, officia?
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="product">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptates ea alias error illo? Aut praesentium inventore dolore adipisci magni? Esse, officia?
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="product">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptates ea alias error illo? Aut praesentium inventore dolore adipisci magni? Esse, officia?
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="product">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptates ea alias error illo? Aut praesentium inventore dolore adipisci magni? Esse, officia?
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="product">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptates ea alias error illo? Aut praesentium inventore dolore adipisci magni? Esse, officia?
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="product">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus quae ducimus tempore, esse placeat quod nisi voluptates ea alias error illo? Aut praesentium inventore dolore adipisci magni? Esse, officia?
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="libs/jquery/jquery-3.5.1.js"></script>
+<script src="libs/bootstrap4/js/bootstrap.bundle.js"></script>
+
+</html>
