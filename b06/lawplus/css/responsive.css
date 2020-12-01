@@ -75,6 +75,12 @@
   .col-md-6 {
     width: 50%;
   }
+
+  /* ========== Icon Block 991px ========== */
+  .list-icon-block {
+    margin-top: 15px;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 767px) {

@@ -84,6 +84,9 @@ body {
   }
 
 /* ============ 03. Icon Block ============ */
+  .list-icon-block {
+    transform: translateY(-40%);
+  }
   .icon-block {
     height: 100%;
     text-align: center;
@@ -131,3 +134,10 @@ body {
 
 
 */
+
+/* =========== 03. Main Slider =========== */
+  .slider-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
