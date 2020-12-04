@@ -1,0 +1,50 @@
+.list-icon-block {
+  transform: translateY(-40%);
+}
+.icon-block {
+  height: 100%;
+  text-align: center;
+  padding: 40px 40px 52px 40px;
+  background-color: #2f4771;
+}
+.icon-block__title {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-top: 18px;
+  font-family: 'Libre Baskerville', serif;
+}
+.icon-block__img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-block__desc {
+  color: #b2bbca
+}
+.list-icon-block [class*="col-"]:nth-child(3n + 2) .icon-block{
+  background-color: #273b61;
+}
+.list-icon-block [class*="col-"]:nth-child(3n) .icon-block{
+  background-color: #1e3051;
+}
+
+/*
+1 2 3 
+4 5 6
+7 8 9
+
+2, 5, 8 (Chia 3)
+2 / 3 -> 0 dư 2
+5 / 3 -> 1 dư 2
+8 / 3 -> 2 dư 2
+
+3, 6, 9 (Chia 3)
+3 / 3 -> 1 
+6 / 3 -> 2
+9 / 3 -> 3
+
+
+
+*/

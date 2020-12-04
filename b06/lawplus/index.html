@@ -7,7 +7,7 @@
   <!-- Thông thường Vùng khai CSS -->
 
   <!-- Font Lato & Libre -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Ionicons v2 https://ionicons.com/v2/ -->
   <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
@@ -19,13 +19,29 @@
 
   <!-- CSS Do mình viết -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/grid-system.css">
+
+  <link rel="stylesheet" href="css/main-title.css">
+  <link rel="stylesheet" href="css/icon-block.css">
+  <link rel="stylesheet" href="css/service-block.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/main-slider.css">
+  <link rel="stylesheet" href="css/introduction.css">
   <link rel="stylesheet" href="css/responsive.css" />
 
 </head>
-<body>
+<body class="no-transition">
   <section class="list-slider">
-    <div class="slider-item" style="background-image: url('http://wp.swlabs.co/lawplus/wp-content/uploads/revslider/home-page-01/hammer-620011_1280.png');">
-      <h2>The greatest firm you can trust</h2>
+    <!-- <div class="slider-item" style="background-image: url('http://wp.swlabs.co/lawplus/wp-content/uploads/revslider/home-page-01/hammer-620011_1280.png');"> -->
+    <div class="slider-item" style="background-image: url('https://inngochuong.com/uploads/images/mau-san-pham/mau-backgroud-dep-don-gian/mau-backgroud-hoa/background-hoa-dep-cho-powerpoint.jpg')">
+      <div class="slider-item__content text-c">
+        <h2 class="slider-item__title">The greatest firm you can trust</h2>
+        <h2 class="slider-item__sub-title">your legal solution starts here!</h2>
+        <div class="slider-item__group-btn">
+          <button class="btn btn-primary">Read more</button>
+          <button class="btn btn-transparent">Purchase now</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -63,6 +79,137 @@
       </div>
     </div>
   </section>
+
+  <section class="introduction">
+    <div class="container">
+      <div class="main-title text-c">
+        <div class="main-title__icon">
+          <img src="./images/icons/title-icon.png" alt="">
+        </div>
+        <p class="main-title__subtitle">Hello lawplus</p>
+        <h3 class="main-title__title">Who we are</h3>
+      </div>
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="introduction__content">
+            <blockquote>I don’t need lawyers who win at all costs, I really need them to win, but calculate the costs.</blockquote>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma doling tresniu eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia doloren sit amet, consecto adipisci</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillus</p>
+            <div class="introduction__group-btn">
+              <button class="btn btn-primary btn-animated">Read more</button>
+              <button class="btn btn-transparent btn-animated">Purchase now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="introduction__image">
+            <img src="./images/home1-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="list-service-block padding-y-50">
+    <div class="container">
+      <div class="main-title text-c">
+        <div class="main-title__icon">
+          <img src="./images/icons/title-icon.png" alt="">
+        </div>
+        <p class="main-title__subtitle">Meet the ATTORNEYS</p>
+        <h3 class="main-title__title">our attorneys</h3>
+      </div>
+      <div class="main-title text-r">
+        <div class="main-title__icon">
+          <img src="./images/icons/title-icon.png" alt="">
+        </div>
+        <p class="main-title__subtitle">Meet the ATTORNEYS</p>
+        <h3 class="main-title__title">our attorneys</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="service-block">
+            <div class="service-block__icon">
+              <i class="icons ion-ios-cart-outline"></i>
+            </div>
+            <h3 class="service-block__title">Request A Lawyer</h3>
+            <p class="service-block__desc">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudine</p>
+            <a href="#" class="btn-read-more">
+              <span>Read more</span>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="service-block">
+            <div class="service-block__icon">
+              <i class="icons ion-ios-cart-outline"></i>
+            </div>
+            <h3 class="service-block__title">Request A Lawyer</h3>
+            <p class="service-block__desc">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudine</p>
+            <a href="#" class="btn-read-more">
+              <span>Read more</span>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="service-block">
+            <div class="service-block__icon">
+              <i class="icons ion-ios-cart-outline"></i>
+            </div>
+            <h3 class="service-block__title">Request A Lawyer</h3>
+            <p class="service-block__desc">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudine</p>
+            <a href="#" class="btn-read-more">
+              <span>Read more</span>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="service-block">
+            <div class="service-block__icon">
+              <i class="icons ion-ios-cart-outline"></i>
+            </div>
+            <h3 class="service-block__title">Request A Lawyer</h3>
+            <p class="service-block__desc">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudine</p>
+            <a href="#" class="btn-read-more">
+              <span>Read more</span>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="service-block">
+            <div class="service-block__icon">
+              <i class="icons ion-ios-cart-outline"></i>
+            </div>
+            <h3 class="service-block__title">Request A Lawyer</h3>
+            <p class="service-block__desc">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudine</p>
+            <a href="#" class="btn-read-more">
+              <span>Read more</span>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="service-block">
+            <div class="service-block__icon">
+              <i class="icons ion-ios-cart-outline"></i>
+            </div>
+            <h3 class="service-block__title">Request A Lawyer</h3>
+            <p class="service-block__desc">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudine</p>
+            <a href="#" class="btn-read-more">
+              <span>Read more</span>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
   <!-- Thông thường Vùng khai báo Javascript -->
+  <script src="js/main.js"></script>
 </html>
