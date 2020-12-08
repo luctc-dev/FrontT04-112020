@@ -1,0 +1,42 @@
+.header-top {
+  border-bottom: 1px solid #ededed;
+}
+
+.header-top__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top .social-list, 
+.header-top .contact-list {
+  display: flex;
+}
+
+.header-top__btns, 
+.header-top__right {
+  display: flex;
+  align-items: center;
+}
+
+.header-top .contact-list {
+  font-size: 13px;
+}
+
+.header-top .social-list a, 
+.header-top .contact-list a {
+  color: #7a7a7a;
+}
+
+.header-top .contact-list a {
+  padding: 5px;
+  padding-right: 15px;
+}
+.header-top .social-list a {
+  padding: 5px 15px;
+  font-size: 15px;
+}
+
+.header-top__btns li {
+  margin-left: 15px;
+}

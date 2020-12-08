@@ -50,6 +50,17 @@
   background-color: #1e3051;
 }
 
+.btn.btn-transparent-white {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.btn.btn-transparent-white:hover {
+  color: #1e3051;
+  background-color: #fff;
+}
+
+
 .btn.btn-animated::before {
   content: '';
   position: absolute;
@@ -80,4 +91,11 @@
   left: 20px;
   right: 20px;
   bottom: -12px;
+}
+
+.btn.btn-lowercase {
+  text-transform: lowercase;
+}
+.btn.btn-capitalize {
+  text-transform: capitalize;
 }
