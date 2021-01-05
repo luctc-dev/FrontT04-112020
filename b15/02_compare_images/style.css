@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 100px 15px;
+  max-width: 1170px;
+}
+
+.compare-images {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-color: aqua;
+  margin-bottom: 100px;
+}
+.compare-images .layer-1,
+.compare-images .layer-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.compare-images .layer-1 img,
+.compare-images .layer-2 img {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
