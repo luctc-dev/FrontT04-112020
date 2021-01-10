@@ -8,36 +8,8 @@ function changeBoxColor() {
 }
 
 
-// window.addEventListener('scroll', function(evt) {
-//   let objDOMRect = boxRedElement.getBoundingClientRect()
-//   let heightBox = objDOMRect.height;
-//   let scrollTop = window.scrollY;
-//   let heightWindow = window.innerHeight;
-//   let offsetTopBoxWithViewPort = objDOMRect.top;
-//   let offsetTopBoxWithBody = scrollTop + offsetTopBoxWithViewPort;
-
-//   if (
-//     scrollTop >= offsetTopBoxWithBody - heightWindow && 
-//     scrollTop <= offsetTopBoxWithBody + heightBox
-//   ) {
-//     setTimeout(function() {
-//       changeBoxColor();
-//     }, 500);
-//   } else {
-//   }
-// });
-
-let soLanChay = 0
-
-function hamHienThiBoxTrungThuong() {
-  console.log("chay hieu ung");
-  soLanChay = soLanChay + 1
-  // chayHieuUngBoxTrungThuongChua = true;
-  boxMaTrungThuongElement.classList.add('hien-thi');
-}
-
 window.addEventListener('scroll', function(evt) {
-  let objDOMRect = boxMaTrungThuongElement.getBoundingClientRect()
+  let objDOMRect = boxRedElement.getBoundingClientRect()
   let heightBox = objDOMRect.height;
   let scrollTop = window.scrollY;
   let heightWindow = window.innerHeight;
@@ -48,9 +20,11 @@ window.addEventListener('scroll', function(evt) {
     scrollTop >= offsetTopBoxWithBody - heightWindow && 
     scrollTop <= offsetTopBoxWithBody + heightBox
   ) {
-    if (soLanChay < 2) {
-      hamHienThiBoxTrungThuong();
-    }
+    // setTimeout(function() {
+    //   changeBoxColor();
+    // }, 100);
+
+    changeBoxColor();
   } else {
   }
 });

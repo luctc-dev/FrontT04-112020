@@ -3,14 +3,13 @@ let listBoxTrungThuong = document.querySelectorAll('.box-ma-trung-thuong');
 // let boxTrungThuong2 = listBoxTrungThuong[1];
 
 window.addEventListener('scroll', function() {
-  // length số lượng phần tử có trong danh sách
   for(let idx = 0; idx < listBoxTrungThuong.length; idx++) {
     detectElementInViewport(
       listBoxTrungThuong[idx], 
       function() {
         setTimeout(() => {
           listBoxTrungThuong[idx].classList.add('hien-thi');
-        }, 1000);
+        }, 500);
       }
     );
   }

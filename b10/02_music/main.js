@@ -1,4 +1,4 @@
-
+// Chưa dùng vòng lặp
 var soundC = document.querySelector('.sound-c');
 var soundD = document.querySelector('.sound-d');
 var soundE = document.querySelector('.sound-e');

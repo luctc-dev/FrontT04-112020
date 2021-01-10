@@ -30,7 +30,8 @@ listNavItem.forEach((navItem) => {
     let x = domRect.top + window.scrollY;
 
     window.scrollTo({
-      top: x - menuDomRect.height,
+      // top: x - menuDomRect.height,
+      top: x,
       left: 0,
       behavior: 'smooth'
     });

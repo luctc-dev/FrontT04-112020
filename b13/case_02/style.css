@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 3000px;
+  position: relative;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 292px;
+  height: 211px;
+  background-color: red;
+  margin-top: 700px;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  transform: translateX(-500px);
+}
+
+.box.box-blue {
+  background-color: blue;
+}
+
+.box.box-effect {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+/* 
+
+1. Nhận diện được khi nào người dùng bắt đầu nhìn thấy vật thể 
+2. Kích hoạt một hàm nào đó để chạy tác vụ mình muốn? 
+  - Chạy một hiệu ứng nào đấy (Thêm class để CSS xử lí hiệu ứng)  
+  - Hiển thị mã (Giao diện HTML thêm class vào để display: block)
+
+
+1. Khi người dùng F5 lại trang (Màn hình ở đầu trang)
+  -> Giá trị scroll của thanh cuộn tính trục y ( = 0)
+2. Khi người dùng scroll (cuộn trang) xuống -> Trục y sẽ tăng
+3. Khi cuộn lên -> Trục y sẽ giảm
+  -> Scroll >= 0
+*/
+
+
+footer {
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: aqua;
+}
+
+.box-ma-trung-thuong {
+  border: 2px solid #000;
+  padding: 20px 30px;
+  font-size: 40px;
+  text-align: center;
+  color: red;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box-ma-trung-thuong.hien-thi {
+  opacity: 1;
+  pointer-events: auto;
+}

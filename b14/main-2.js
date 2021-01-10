@@ -1,5 +1,3 @@
-
-
 let previousScrollTop = 0;
 
 window.addEventListener('scroll', function() {

@@ -16,6 +16,7 @@
   position: relative;
   background-color: aqua;
   margin-bottom: 100px;
+  cursor: move;
 }
 .compare-images .layer-1,
 .compare-images .layer-2 {
@@ -27,7 +28,9 @@
   overflow: hidden;
   pointer-events: none;
 }
-
+.compare-images .layer-2 {
+  left: 50%;
+}
 .compare-images .layer-1 img,
 .compare-images .layer-2 img {
   top: 0;
