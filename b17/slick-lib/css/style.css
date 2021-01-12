@@ -40,3 +40,27 @@
   height: 400px;
   background-size: cover;
 }
+.main-slider .slick-dots {
+  margin-top: 15px;
+}
+.main-slider .slick-dots,
+.main-slider .slick-dots > li {
+  display: flex;
+}
+.main-slider .slick-dots span:first-child {
+  text-indent: -4px;
+  height: 35px;
+  padding-top: 35px;
+}
+.main-slider .slick-dots span {
+  display: block;
+  width: 1px;
+  height: 15px;
+  margin-right: 10px;
+  background-color: #ccc;
+}
+
+.main-slider .slick-dots .slick-active span {
+  color: red;
+  background-color: red;
+}
