@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      min-height: 3000px;
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      background-color: aqua;
+      margin-top: 1000px;
+      margin-left: 100px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="images">
+    <img data-my-lazy="https://kenwheeler.github.io/slick/img/lazyfonz5.png" />
+  </div>
+</body>
+<script>
+  function detectElementInViewport(element, callbackFunc) {
+    if (element === null) {
+      return;
+    }
+    // if (!element) {
+    //   return;
+    // }
+
+    let objDOMRect = element.getBoundingClientRect()
+    let heightBox = objDOMRect.height;
+    let scrollTop = window.scrollY;
+    let heightWindow = window.innerHeight;
+    let offsetTopBoxWithViewPort = objDOMRect.top;
+    let offsetTopBoxWithBody = scrollTop + offsetTopBoxWithViewPort;
+
+    if (
+      scrollTop >= offsetTopBoxWithBody - heightWindow &&
+      scrollTop <= offsetTopBoxWithBody + heightBox
+    ) {
+      if (typeof callbackFunc === 'function') {
+        callbackFunc();
+      }
+    } else {
+    }
+  }
+
+  let imageLazy = document.querySelector("[data-my-lazy]");
+
+  window.addEventListener('scroll', function(evt) {
+    detectElementInViewport(
+      document.querySelector("[data-my-lazy]"),
+      function handleMyLazy() {
+        if (!imageLazy.getAttribute('src')) {
+          let src = imageLazy.getAttribute('data-my-lazy'); // https://kenwheeler.github.io/slick/img/lazyfonz5.png
+          imageLazy.removeAttribute('data-my-lazy');
+          imageLazy.setAttribute('src', src);
+        }
+      }
+    )
+  })
+
+</script>
+
+</html>
