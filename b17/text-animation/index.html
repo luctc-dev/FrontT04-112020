@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    #loading.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .text-animation {
+      color: #fff;
+      font-size: 60px;
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .text-animation span {
+      display: inline-block;
+      /* transform: translateY(-50px); */
+      /* opacity: 0; */
+      transition: 0.3s;
+    }
+
+    .text-animation span.run {
+      /* opacity: 1; */
+      color: aqua;
+      /* transform: translateY(0); */
+    }
+
+    .text-animation span.empty {
+      color: transparent !important;
+    }
+
+    #mouse {
+      width: 40px;
+      height: 40px;
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      background-color: #fff;
+      transition: width 0.3s, height 0.3s;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+    }
+
+    #mouse.animated {
+      width: 100px;
+      height: 100px;
+    }
+
+    html,
+    body {
+      cursor: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loading">
+    <h1 class="text-animation">Học lập trình Front End</h1>
+  </div>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque vel dolorum minus nobis, blanditiis
+    consectetur fugit nihil ab, quam quidem. Rerum quo provident quaerat sit alias modi, unde facere!</p>
+
+  <div id="mouse"></div>
+</body>
+<script src="main.js"></script>
+
+</html>
